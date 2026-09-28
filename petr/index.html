@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+<meta charset="UTF-8">
+<title>List of Assignments</title>
+<link rel="icon" type="image/png" href="favicon.ico">
+<style>
+body {
+    background-color: grey;
+    color: white;
+    margin: 50px;
+    font-family: Verdana;
+}
 
-	<title>Assigment 1</title>
+div {
+	padding: 50px;
+	background-color: black;
+}
 
-</head>
+a {
+    color: yellow;
+}
+
+</style>
 <body>
-
-	<h1>About Me</h1>
-
-
-<p>
-With deep gratitude and respect, we are honoured to be learning and unlearning on the ancestral and unceded lands of the xʷməθkʷəy̓əm (Musqueam), Sḵwxwú7mesh Úxwumixw (Squamish Nation) & səlilwətaɬ (Tsleil-Waututh Nation).
-</p>
-
-
-
-<hr><!--hr: horizontal ruler (line)-->
-
-<p>
-My name is Peter. I moved from Toronto to Vancouver. I like to play soccer, I have been playing it my whole life. I also like to walk and play with my dog. I really enjoy spending time outside. I like riding a bike, going camping and on hikes. My favorite class in school is gym and marketing because I like to play spots and stay active, but I also like learning about businesses, money management, and entrepreneurship. 
-</p>
-	<img alt="outside image" style="width: 400px;" src="https://cdn.mos.cms.futurecdn.net/WXZQnTcQHyt2igzrwhNUyW.jpg"><!--absolute width-->
-	<hr><!--hr: horizontal ruler (line)-->
-
-<p>
-Click <a href="https://www.nike.com/ca/" target="_blank">here</a> to visit my favourite website!
-
-</p>
-	<hr><!--hr: horizontal ruler (line)-->
-	<h2>Why I took Computer Studies</h2>
-	<p>
-I took Computer Studies because I really enjoy making video games and website. I think it's very fun and interesting to learn more about how computers work. And also learning coding is a very useful skill you can use later in life. I have already learned basic HTML and how to make simple games using Gamemaker. And I am looking forward to learning more.  
-	</p>
-	<hr><!--hr: horizontal ruler (line)-->
-	<p>
-I, Peter, fully acknowledge that all homepage files must be renamed to index.html and my code has been checked on https://validator.w3.org/ and has been corrected. 
-</p>
-<p>
-Furthermore, this page has been uploaded and tested onto the web server. Failure to do so will result in a severe loss of marks.
-</p>
-<hr>
+<div>
+<h1 id="self">Welcome</h1>
+<ul>
+    <li><a href="a1" target="_blank">Assignment 1</a></li>
+    <li><a href="a2" target="_blank">Assignment 2</a></li>
+    <li><a href="a3" target="_blank">Assignment 3</a></li>
+    <li><a href="a4" target="_blank">Assignment 4</a></li>
+    <li><a href="project" target="_blank">Final Project</a></li>
+</ul>
+</div>
+<script>
+    // Get name from URL
+    var current = window.location.href;
+    current = current.substring(48)
+    current = current.substring(0,1).toUpperCase() + current.substring(1, current.length - 1)
+    document.getElementById("self").innerHTML = "Welcome to " + current + "'s CST 10 Portfolio";    
+</script>
 </body>
 </html>
