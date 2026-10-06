@@ -34,14 +34,9 @@ a {
 </ul>
 </div>
 <script>
-    // Get the name from the last part of the URL
     var current = window.location.pathname.split("/").filter(Boolean).pop();
-
-    // Capitalize the first letter
     current = current.charAt(0).toUpperCase() + current.slice(1);
-
-    document.getElementById("self").innerHTML =
-        "Welcome to " + current + "'s CST 10 Portfolio";
+    document.getElementById("self").innerHTML = "Welcome to " + current + "'s CST 10 Portfolio";
 </script>
 </body>
 </html>
