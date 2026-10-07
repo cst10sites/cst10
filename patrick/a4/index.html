@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Error 404</title>
+<link rel="icon" type="image/png" href="favicon.ico">
+<style>
+body {
+    background-color: grey;
+    color: white;
+    margin: 50px;
+    font-family: Verdana;
+}
+
+div {
+	padding: 50px;
+	background-color: black;
+}
+
+p {
+    color: yellow;
+}
+
+</style>
+<body>
+<div>
+<h1>Error 404</h1>
+<p>
+    This assignment has not been uploaded. Upload all the files into this <span id="self"></span> folder and replace the index.html file.
+</p>
+</div>
+<script>
+    var current = window.location.pathname.split("/").filter(Boolean).pop();
+    current = current.charAt(0).toLowerCase() + current.slice(1);
+    document.getElementById("self").innerHTML = current;
+</script>
+</body>
+</html>
