@@ -1,52 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Lesson 1</title>
-</head>
+<meta charset="UTF-8">
+<title>List of Assignments</title>
+<link rel="icon" type="image/png" href="favicon.ico">
+<style>
+body {
+    background-color: grey;
+    color: white;
+    margin: 50px;
+    font-family: Verdana;
+}
+
+div {
+	padding: 50px;
+	background-color: black;
+}
+
+a {
+    color: yellow;
+}
+
+</style>
 <body>
-	<h1>Lesson 1: Basic HTML</h1>
-	<p>
-		ths is a paragraph this is <em> another</em> sentence extra spaces and newl ines tuff...
-
-		gets conveted into one space 
-<p>
-</p>
-		this is <strong>another</strong> paragraph!
-	</p>
-	<p>
-		this water is H<sub>2</sub>O and 9<sup>2</sup> = 81. 
-	helpfile f\to remeber SUBmarine underwater and SUPerman in the sky.,,.
-	</p>
-	<P>	
-		<!--THIS IS A COMENT: tung tung --> 
-
-	</P>
-	<hr><!--hr: horozpmtp; ri;er (line)-->
-	<h1> heading 1 title of a book h1</h1>
-	<h2>chapter of a book h2</h2>
-	<h3>heading 3 section h3</h3>
-	<h4>h4</h4>
-	<h5>h5</h5>
-	<h6>h6</h6>
-	<p>.....up to h6
-	</p>
-	<hr>
-	<h1>images</h1>
-	<p>there are three types of web-safe image types: jpg/jpeg, png, gif. jpg are normally photos and doesnt supporty transparency or translucenterrrrrrrr, which mean see throug; highyl ocompressable, pngs are ofren for graphics like logos because they support transparencies, gif has limited colors but supports animations such as memes.</p>
-	<p>dont use thingy</p>
-	<img alt="my food" style="width: 200px; " src="https://betterwithcats.net/wp-content/uploads/2022/08/cat-is-laying-on-a-old-wooden-table.jpg">
-	<!-- absalute width-->
-	<img alt="my food" style="width: 20%; " src="https://betterwithcats.net/wp-content/uploads/2022/08/cat-is-laying-on-a-old-wooden-table.jpg">
-
-	<hr>
-	<h1>hyperlinks</h1>
-	<p>click <a target="_blank" href="https://betterwithcats.net">tihs</a> pls rth ea is the lnky thinghy hy[perping as ahcor rqureis as fewa abturc tbeute such as href target="_blank" = open a new tab this s basep ierha when goaigon ato tanother websikte </p>
-<hr>
+<div>
+<h1 id="self">Welcome</h1>
 <ul>
-	<li>txt obk: https://www.w3schools.com/html</li>
-	<li>validarotr: https://validator.w3.org/</li>
-	<li>notes: https://tinyurl.com/mrkamcode</li>
+    <li><a href="a1" target="_blank">Assignment 1</a></li>
+    <li><a href="a2" target="_blank">Assignment 2</a></li>
+    <li><a href="a3" target="_blank">Assignment 3</a></li>
+    <li><a href="a4" target="_blank">Assignment 4</a></li>
+    <li><a href="project" target="_blank">Final Project</a></li>
 </ul>
+</div>
+<script>
+    var current = window.location.pathname.split("/").filter(Boolean).pop();
+    current = current.charAt(0).toUpperCase() + current.slice(1);
+    document.getElementById("self").innerHTML = "Welcome to " + current + "'s CST 10 Portfolio";
+</script>
 </body>
 </html>
