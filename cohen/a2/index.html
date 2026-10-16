@@ -1,38 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Error 404</title>
-<link rel="icon" type="image/png" href="favicon.ico">
-<style>
-body {
-    background-color: grey;
-    color: white;
-    margin: 50px;
-    font-family: Verdana;
-}
+	<head>
+		<title>Assignment 2</title>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/x-icon" href="cookie.ico">
+		<style>
+			body {
+				background-color: gray;
+				margin: 50px 100px;
+				font-family: Verdana;
+				color: black;
+			}
 
-div {
-	padding: 50px;
-	background-color: black;
-}
+			div {
+				padding: 20px;
+				background-color: lightslategray;
+				border: 5px dimgray solid;
+				border-radius: 25px;
+			}
 
-p {
-    color: yellow;
-}
+			hr {
+				height: 2px;
+				background-color: dimgray;
+				border: 2px dimgray solid;
+				border-radius: 2px;
+			}
 
-</style>
-<body>
-<div>
-<h1>Error 404</h1>
-<p>
-    This assignment has not been uploaded. Upload all the files into this <span id="self"></span> folder and replace the index.html file.
-</p>
-</div>
-<script>
-    var current = window.location.pathname.split("/").filter(Boolean).pop();
-    current = current.charAt(0).toLowerCase() + current.slice(1);
-    document.getElementById("self").innerHTML = current;
-</script>
-</body>
+			.subheading-small {
+				font-size: 1.17em;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>Chocolate Chip Cookies</h1>
+			<h2 class="subheading-small">Makes 36 cookies</h2>
+			<hr>
+			<h2>Introduction</h2>
+			<p> I chose these chocolate chip cookies not only because they are very easy, but also because the recipe is basically foolproof. These are the cookies my mom always makes for me and my friends. She always freeses the cookie dough so that fresh cookies are always only 10 minutes away. The original recipe comes from <a target="_blank" href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/">this</a> website, although some changes have been made (I hope I got them all). Enjoy! </p>
+			<img alt="chocolate chip cookie" style="float:right ;height: 250px ;border-right: 20px lightslategray solid;" src="choco_chip_cookie.jpg">
+			<img alt="yum png" style="float:right ;width: 300px ;border-right: 50px lightslategray solid ;border-top: 20px lightslategray solid;" src="yum.png">
+			<h2>Ingredients</h2>
+			<ul>
+				<li>1 cup softened salted butter</li>
+				<li>1 cup granulated sugar</li>
+				<li>1 cup packed light brown sugar</li>
+				<li>2 teaspoons pure vanilla extract</li>
+				<li>2 large eggs</li>
+				<li>3 cups all-purpose flour</li>
+				<li>1 teaspoon baking soda</li>
+				<li>&frac12; teaspoon baking powder</li>
+				<li>1 teaspoon sea salt</li>
+				<li>2 cups chocolate chips</li>
+			</ul>
+			<h2>Instructions</h2>
+			<img alt="cookie png" style="float:right ;width: 300px ;" src="choco_chip_cookie.png">
+			<ol>
+				<li>Preheat oven to 375&deg;C and line three baking sheets with parchment paper and set aside.</li>
+				<li>In a medium bowl mix flour, baking soda, baking powder, and salt. Set aside.</li>
+				<li>Cream together butter and sugars (granulated and brown) until combined.</li>
+				<li>Beat in eggs and vanilla until light (about 1 minute).</li>
+				<li>Mix in the dry ingredients until combined.</li>
+				<li>Add chocolate chips and mix well.</li>
+				<li>Roll 2-3 tablespoons (depending on how large you like your cookies) of dough at a time and place them evenly spaced on your cookie sheets.</li>
+			</ol>
+			<p>
+				<strong>Note:</strong> at this point, if you would like frozen cookie dough to bake at a later time, put the cookie dough balls in a container and first refridgerate overnight, then freeze for best results. When you want to bake them, continue with the steps.
+			</p>
+			<ol start="8">
+				<li>Bake in preheated oven for approximately 8-10 minutes. Take them out when they are just barely starting to turn brown.</li>
+				<li>let them sit on the baking pan for 5 minutes before removing to cooling rack.</li>
+			</ol>
+		</div>
+	</body>
 </html>
