@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Error 404</title>
-<link rel="icon" type="image/png" href="favicon.ico">
-<style>
-body {
-    background-color: grey;
-    color: white;
-    margin: 50px;
-    font-family: Verdana;
-}
+	<head>
+		<title>Assignment 2</title>
+		<style>
+			body {
+				background-color: black;
+				color: white;
+				margin: 10px 20px;
+				font-family: Verdana;
+			}
 
-div {
-	padding: 50px;
-	background-color: black;
-}
+			div {
+				background-color: yellow;
+				padding: 20px;
+				border: 5px solid white;
+			}
 
-p {
-    color: yellow;
-}
-
-</style>
-<body>
-<div>
-<h1>Error 404</h1>
-<p>
-    This assignment has not been uploaded. Upload all the files into this <span id="self"></span> folder and replace the index.html file.
-</p>
-</div>
-<script>
-    var current = window.location.pathname.split("/").filter(Boolean).pop();
-    current = current.charAt(0).toLowerCase() + current.slice(1);
-    document.getElementById("self").innerHTML = current;
-</script>
-</body>
+			h1,
+			h2,
+			h3,
+			h4 {
+				color: yellow;
+				text-decoration: underline;
+		</style>
+	</head>
+	<body>
+		<h1>How to make Truffle Fries</h1>
+		<h2>Introduction</h2>
+		<p> I chose this recipe because I've loved French fries ever since I could remember. They've been my favourite food my entire life and are always good and really easy to make. When I was in around 4th grade, I made fries almost every single day after school. I've probably done over 5 projects on how to make fries, so I'd say I'm a pro. Anyways, my favourite fast food fries are <a href="https://www.fiveguys.com" target="_blank" style="color: yellow;">here!</a>
+		</p>
+		<img alt="png" style="width: 200px;float: right;border-right: 250px black solid;" src="16mag-eat-jumbo.png.webp">
+		<h3>Ingredients</h3>
+		<ul>
+			<li>1kg Potatos</li>
+			<li>1.5-2L Vegetable Oil</li>
+			<li>1 &frac12; tsp Salt</li>
+			<li>1L Water</li>
+			<li>&frac12; tsp Black Pepper</li>
+			<li>&frac12; tsp Garlic Powder</li>
+			<li>&frac12; tsp Paprika</li>
+		</ul>
+		<img alt="jpg" style="width: 200px;float: right;border-right: 250px black solid;" src="easy-french-fries-1.jpg">
+		<h4>Instructions</h4>
+		<ol>
+			<li>Wash, peel, and cut potatoes into even long strips.</li>
+			<li>Soak potato sticks in cold water for 10 minutes.</li>
+			<li>Drain and thoroughly dry potatoes.</li>
+			<li>Fry the fries at 325&deg;/165&deg; C for 4-6 minutes, until pale and tender.</li>
+			<li>Remove and rest the fries for 5-10 minutes.</li>
+			<li>Increase oil temperature to 375&deg; degrees/190&deg; C.</li>
+			<li>Put them back in the oil and fry them for 2 minutes until golden brown and crispy.</li>
+			<li>Drain on a paper towel and season immediately with salt.</li>
+		</ol>
+	</body>
 </html>
