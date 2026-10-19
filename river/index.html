@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>List of Assignments</title>
-<link rel="icon" type="image/png" href="favicon.ico">
-<style>
-body {
-    background-color: grey;
-    color: white;
-    margin: 50px;
-    font-family: Verdana;
-}
-
-div {
-	padding: 50px;
-	background-color: black;
-}
-
-a {
-    color: yellow;
-}
-
-</style>
-<body>
-<div>
-<h1 id="self">Welcome</h1>
-<ul>
-    <li><a href="a1" target="_blank">Assignment 1</a></li>
-    <li><a href="a2" target="_blank">Assignment 2</a></li>
-    <li><a href="a3" target="_blank">Assignment 3</a></li>
-    <li><a href="a4" target="_blank">Assignment 4</a></li>
-    <li><a href="project" target="_blank">Final Project</a></li>
-</ul>
-</div>
-<script>
-    var current = window.location.pathname.split("/").filter(Boolean).pop();
-    current = current.charAt(0).toUpperCase() + current.slice(1);
-    document.getElementById("self").innerHTML = "Welcome to " + current + "'s CST 10 Portfolio";
-</script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+    <style>
+      body {
+        background-color: beige;
+        color: brown;
+        margin: 50px 200px;
+        font-family: verdana;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Recipe</h1>
+    <p></p>
+    <h2>Introduction</h2>
+    <p>Welcome to this mediocre cookie recipe. These cookies will probably taste like a culinary mistake, and look like they were assembled during a minor earthquake. I can’t promise they’ll be edible, let alone enjoyable, but I can promise that a series of questionable decisions and a handful of ingredients will eventually produce something vaguely cookie-shaped. </p>
+    <img alt="png" style="width: 200px; float:right;" src="cookie2.png">
+    <h2>Ingredients</h2>
+    <ul>
+      <li>312 grams of all purpose flour</li>
+      <li>226 grams of unsalted butter, softened</li>
+      <li>100 grams of brown sugar</li>
+      <li>50 grams of egg without shell</li>
+      <li>5 grams of vanilla extract</li>
+      <li>5 grams of baking soda</li>
+      <li>4 grams of fine salt</li>
+      <li>An entire bag of chocolate chips</li>
+    </ul>
+    <h2>Instructions</h2>
+    <ol>
+      <li>Cream the butter and sugars Beat the softened butter, brown sugar, and white sugar for 2–3 minutes until light and fluffy.</li>
+      <li>Add egg and vanilla Mix in the egg and vanilla until fully incorporated.</li>
+      <li>Add the dry ingredients Whisk together the flour, baking soda, and salt. Stir them into the wet mixture just until combined, then fold in the chocolate chips.</li>
+      <li>Chill and portion Refrigerate the dough for 30 minutes. Divide into approximately 24 equal portions and place on parchment-lined baking sheets.</li>
+      <li>Bake Preheat the oven to 177&deg;C. Bake for 10–13 minutes, until the edges are golden and the centers remain slightly soft. Cool on the baking sheet for 5 minutes.</li>
+      <li>Boil a &frac12; cup of milk and enjoy your probably pretty mediocre cookies </li>
+    </ol>
+    <img alt="jpg" style="width:200px;" src="cookies.jpg">
+    <p>(This is what mine looked like!)</p>
+  </body>
 </html>
