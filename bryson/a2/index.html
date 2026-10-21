@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Error 404</title>
-<link rel="icon" type="image/png" href="favicon.ico">
-<style>
-body {
-    background-color: grey;
-    color: white;
-    margin: 50px;
-    font-family: Verdana;
-}
+	<head>
+		<meta charset="UTF-8">
+		<title>Assignment 2</title>
+		<style>
+			body {
+				background-color: #fff0f5;
+				color: #333333;
+				font-family: Helvetica, Arial, sans-serif;
+				max-width: 800px;
+				margin: 40px auto;
+				border: 2px solid #8b4513;
+				border-radius: 8px;
+				padding: 40px;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+			}
 
-div {
-	padding: 50px;
-	background-color: black;
-}
+			h1 {
+				color: #2e7d32;
+				border-bottom: 3px solid #ff69b4;
+				padding-bottom: 10px;
+				margin-top: 0;
+			}
 
-p {
-    color: yellow;
-}
+			h2 {
+				color: #2e7d32;
+			}
 
-</style>
-<body>
-<div>
-<h1>Error 404</h1>
-<p>
-    This assignment has not been uploaded. Upload all the files into this <span id="self"></span> folder and replace the index.html file.
-</p>
-</div>
-<script>
-    var current = window.location.pathname.split("/").filter(Boolean).pop();
-    current = current.charAt(0).toLowerCase() + current.slice(1);
-    document.getElementById("self").innerHTML = current;
-</script>
-</body>
+			a {
+				color: #ff1493;
+			}
+
+			.food-pic {
+				border: 3px solid #2e7d32;
+				border-radius: 4px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Salmon and spring onions gratins</h1>
+		<h2>Introduction</h2>
+		<img alt="Yum Logo" style="width: 200px; float: right; margin-left: 15px;" src="Yum.png">
+		<p> This is a low calorie, light and healthy comfort meal. Made with common staple ingredients like canned salmon, spring onions and eggs. I chose this recipe since I've gotten more into more of a low calorie, high protein diet, and this recipe is amazing for it. I also personally love spring onions and salmon. Here is the <a href="https://lavenderandlovage.com" target="_blank">original recipe</a>. </p>
+		<h2>Ingredients</h2>
+		<img class="food-pic" alt="Finished Gratin" style="width: 250px; float: right; margin-left: 15px;" src="gratin.jpg">
+		<ul>
+			<li>200g pink salmon (drained, skinned, and boned)</li>
+			<li>2 spring onions (trimmed and finely sliced)</li>
+			<li>4 small eggs</li>
+			<li>Juice of &frac12; lemon</li>
+			<li>Sea salt and black pepper to taste</li>
+			<li>Low-fat spray oil</li>
+		</ul>
+		<h2>Instructions</h2>
+		<ol>
+			<li>Pre-heat your oven to 180&deg;C / 375&deg;F.</li>
+			<li>Grease two small, oven-proof dishes with the low-fat spray oil.</li>
+			<li>Whisk the eggs in a bowl, season with salt and pepper, and stir in the lemon juice and sliced spring onions.</li>
+			<li>Mash the drained salmon, gently fold it into the egg mixture, and spoon it into your prepared dishes.</li>
+			<li>Bake for 20 to 25 minutes until the gratins are puffed up, golden brown, and firm to the touch.</li>
+		</ol>
+	</body>
 </html>
+</html></html>
