@@ -1,38 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Error 404</title>
-<link rel="icon" type="image/png" href="favicon.ico">
-<style>
-body {
-    background-color: grey;
-    color: white;
-    margin: 50px;
-    font-family: Verdana;
-}
+  <head>
+    <meta charset="UTF-8">
+    <TITLE>Assignment 2</TITLE>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fffbf7;
+        color: #3e2716;
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 0 20px;
+        line-height: 1.6;
+      }
 
-div {
-	padding: 50px;
-	background-color: black;
-}
+      h1 {
+        color: #d35400;
+        text-align: center;
+        font-size: 2.2rem;
+      }
 
-p {
-    color: yellow;
-}
+      h2 {
+        color: #e67e22;
+        border-bottom: 2px solid #fadbd8;
+        padding-bottom: 5px;
+        margin-top: 30px;
+      }
 
-</style>
-<body>
-<div>
-<h1>Error 404</h1>
-<p>
-    This assignment has not been uploaded. Upload all the files into this <span id="self"></span> folder and replace the index.html file.
-</p>
-</div>
-<script>
-    var current = window.location.pathname.split("/").filter(Boolean).pop();
-    current = current.charAt(0).toLowerCase() + current.slice(1);
-    document.getElementById("self").innerHTML = current;
-</script>
-</body>
+      a {
+        color: #ba4a00;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <H1>The BEST Pumpkin Pie</H1>
+    <h2>Introduction</h2>
+    <p>
+      <img alt="A delicious slice of fresh pumpkin pie" src="pie.jpeg" style="width: 25%; float: right; margin-left: 15px; border-radius: 4px;"> Pumpkin pie is the best dessert when fall comes around. I chose it because i personally love pumpkin pie and its currently fall. Even if you dont bake, anyone can still make this easy recipe. If you want to see where I got it from, you can check out the <a href="https://tastesbetterfromscratch.com" target="_blank">original recipe on Tastes Better From Scratch</a>.
+    </p>
+    <h2>Ingredients</h2>
+    <ul>
+      <li>
+        <strong>Pie Crust:</strong> 1 unbaked deep-dish 9-inch shell
+      </li>
+      <li>
+        <strong>Pumpkin Puree:</strong> 15 ounces of canned pumpkin
+      </li>
+      <li>
+        <strong>Evaporated Milk:</strong> 12 ounces
+      </li>
+      <li>
+        <strong>Sugar &amp; Spices:</strong> &frac34; cup granulated sugar, 1 teaspoon ground cinnamon, &frac12; teaspoon salt, &frac12; teaspoon ground ginger, and &frac14; teaspoon ground cloves
+      </li>
+      <li>
+        <strong>Eggs:</strong> 2 large eggs
+      </li>
+    </ul>
+    <h2>Instructions</h2>
+    <ol>
+      <li>Preheat your conventional oven to 425&deg;F (218&deg;C) to ensure it reaches the correct baking temperature.</li>
+      <li>Beat the eggs and pumpkin puree together thoroughly in a large mixing bowl until smooth.</li>
+      <li>Combine the granulated sugar, cinnamon, salt, ginger, and cloves in a separate bowl before stirring them into the pumpkin mixture.</li>
+      <li>Pour the blended filling carefully into your unbaked pie shell.</li>
+      <li>Bake the pie at 425&deg;F for exactly 15 minutes, then reduce the heat to 350&deg;F and bake for an additional 40 to 50 minutes until the center sets.</li>
+    </ol>
+    <div style="clear: both; text-align: center; padding-top: 40px;">
+      <img style="width: 120px;" src="pumpkin.png" alt="Pumpkin graphic">
+    </div>
+  </body>
 </html>
