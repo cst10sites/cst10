@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Error 404</title>
-<link rel="icon" type="image/png" href="favicon.ico">
-<style>
-body {
-    background-color: grey;
-    color: white;
-    margin: 50px;
-    font-family: Verdana;
-}
+	<head>
+		<meta charset="UTF-8">
+		<title>Assignment 2</title>
+		<style>
+			body {
+				background-color: sandybrown;
+				color: lightyellow;
+				margin: 40px 40px;
+			}
 
-div {
-	padding: 50px;
-	background-color: black;
-}
-
-p {
-    color: yellow;
-}
-
-</style>
-<body>
-<div>
-<h1>Error 404</h1>
-<p>
-    This assignment has not been uploaded. Upload all the files into this <span id="self"></span> folder and replace the index.html file.
-</p>
-</div>
-<script>
-    var current = window.location.pathname.split("/").filter(Boolean).pop();
-    current = current.charAt(0).toLowerCase() + current.slice(1);
-    document.getElementById("self").innerHTML = current;
-</script>
-</body>
+			a {
+				color: lightblue;
+			}
+		</style>
+	</head>
+	<body>
+		<h1> My Recipe </h1>
+		<h2> Introduction </h2>
+		<p> I chose to make a peanut butter oatmeal cookies recipe because they are very simple and delicious. Peanut Butter Oatmeal Cookies are delicious cookies made from peanut butter, oatmeal, and other ingredients. The original recipe link is <a target="_blank" href="https://www.allrecipes.com/recipe/10308/oatmeal-peanut-butter-cookies/">here</a>. </p>
+		<p></p>
+		<h2> Ingredients </h2>
+		<ul>
+			<li>1 cup peanut butter</li>
+			<li>1 cup packed brown sugar</li>
+			<li> &frac34; cup white sugar</li>
+			<li>&frac12; cup shortening</li>
+			<li>½ cup margarine, softened</li>
+			<li>2 large eggs</li>
+			<li>1 ½ cups all-purpose flour</li>
+			<li>2 teaspoons baking soda</li>
+			<li>1 teaspoon salt</li>
+			<li>1 cup quick-cooking oats</li>
+		</ul>
+		<h2> Instructions </h2>
+		<ol>
+			<li>Preheat the oven to 350 degrees F (175 degrees C).</li>
+			<li>Beat peanut butter, brown sugar, white sugar, shortening, and margarine in a large bowl with an electric mixer on medium speed until smooth and creamy. Beat in eggs, one at a time, until well blended.</li>
+			<li>Combine flour, baking soda, and salt in a separate bowl; stir into creamed mixture until incorporated. Mix in oats until just combined.</li>
+			<li>Drop teaspoonfuls of dough onto ungreased cookie sheets.</li>
+			<li>Bake cookies in the preheated oven until just lightly browned, 10 to 15 minutes. Do not overbake. Cool and store in an airtight container.</li>
+		</ol>
+		<img src="10308-oatmeal-peanut-butter-cookies-DDMFS-4x3-0ea3ce0c182d4dd29d5fa59581252f6a.jpg" alt="cookies" style="width:48%; float: left;">
+		<img src="Yum!_Brands_logo.svg.png" alt="yum!" style="width:48%; float: right;">
+	</body>
 </html>
