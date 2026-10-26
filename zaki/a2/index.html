@@ -1,38 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Error 404</title>
-<link rel="icon" type="image/png" href="favicon.ico">
-<style>
-body {
-    background-color: grey;
-    color: white;
-    margin: 50px;
-    font-family: Verdana;
-}
+	<title>Lesson 3</title>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/x-icon" href="dizzy.ico">
+	<!--works on most browsers except Safari-->
 
-div {
-	padding: 50px;
-	background-color: black;
-}
+	<!--later: fallback for Safari-->
+	<style>
+		body {
+			background-color: goldenrod;
+			color: white;
+			margin: 50px 200px;
+			font-family: Verdana;
+		}
 
-p {
-    color: yellow;
-}
+		div {
+			background-color: darkgray;
+			padding: 20px;
+			border: 5px solid white;
+		}
 
-</style>
+		h1, h2 {
+			color: yellow;
+			text-decoration: underline;
+		}
+
+		h3 {
+			color: darkgoldenrod;
+		}
+	</style>
+</head>
 <body>
-<div>
-<h1>Error 404</h1>
-<p>
-    This assignment has not been uploaded. Upload all the files into this <span id="self"></span> folder and replace the index.html file.
-</p>
-</div>
-<script>
-    var current = window.location.pathname.split("/").filter(Boolean).pop();
-    current = current.charAt(0).toLowerCase() + current.slice(1);
-    document.getElementById("self").innerHTML = current;
-</script>
+	<h1>the bestes mccheese recipie youve ever seen</h1>
+
+	<h2>this amazing mccheese is a recipie that you will never forget!</h2>
+		<img alt="jpg" style="width: 200px;"src="mac.png">
+
+	<h3>ingredients</h3>
+	<li>8 tablespoons unsalted butter, melted and divided</li>
+	<li>1 ½ cups roughly crushed buttery round crackers (such as Ritz)</li>
+	<li>1/4 cup all-purpose flour</li>
+	<li>2 ½ cups warm whole milk (about 105°F)</li>
+	<li>1 ½ cups warm half and half (about 105°F)</li>
+	<li>4 teaspoons Dijon mustard</li>
+	<li>2 teaspoons kosher salt</li>
+	<li>1 teaspoon garlic powder</li>
+	<li>1/4 teaspoon smoked paprika</li>
+	<li>1 (0.4-ounce) cube vegetable bouillon, very finely crushed</li>
+	<li>8 ounces sharp yellow Cheddar cheese, shredded</li>
+	<li>4 ounces smoked yellow Cheddar cheese, shredded</li>
+	<li>8 ounces Colby-Jack cheese, shredded and divided</li>
+	<li>1 (16-ounce) package dried cavatappi pasta, cooked to al dente according to package directions</li>
+	<li>8 ounces part-skim mozzarella cheese, shredded, divided</li>
+	<li>3/4 cup sour cream, at room temperature</li>
+
+	<p>once all the ingredents have been colleted, you can start making you mccheese!</p>
+	<h3>Step 1</h3>
+	<p>Gather all ingredients. Preheat oven to 350°F. Grease a 9x13-inch baking dish with 1 tablespoon of melted butter.</p>
+	<h3>Step 2</h3>
+	<p>Stir crackers and 3 tablespoons of the melted butter together in a medium skillet; cook, stirring often, over medium until lightly toasted, about 2 minutes. Remove from heat; set aside.</p>
+	<h3>Step 3</h3>
+    <p>Whisk flour and remaining 4 tablespoons melted butter together in a large Dutch oven over medium heat; cook, whisking constantly, until still blond in color but bubbly and somewhat toasty in aroma, about 2 minutes.</p>
+    <h3>Step 4</h3>
+    <p>Gradually add milk and half-and-half, whisking constantly, until combined. Cook over medium heat, whisking often, until milk mixture can very lightly coat the back of a spoon and hold a trail when a finger is dragged through, 2 to 4 minutes.</p>
+    <h3>Step 5</h3>
+    <p>Remove from heat; whisk in mustard, salt, garlic powder, paprika, and bouillon until dissolved and well combined.</p>
+    <h3>Step 6</h3>
+    <p>Gradually whisk in Cheddar, smoked Cheddar, and 1 cup of the Colby Jack, one cup at a time, until melted and smooth.</p>
+    <h3>Step 7</h3>
+    <p>Stir in cooked pasta until evenly coated. Spread half of the pasta mixture into prepared pan; top evenly with 1 cup of the mozzarella and 1/2 cup of the Colby Jack. Dollop and spread sour cream evenly over mozzarella mixture.</p>
+    <h3>Step 8</h3>
+    <p>Top evenly with remaining pasta mixture; sprinkle with remaining 1 cup mozzarella and 1/2 cup Colby Jack.</p>
+    <h3>Step 9</h3>
+    <p>Sprinkle crushed cracker mixture evenly over pasta mixture.</p>
+    <h3>Step 10</h3>
+    <p>Bake in preheated oven until pasta mixture is bubbly around the edges, 25 to 30 minutes, loosely covering with aluminum foil to prevent overbrowning, if needed. Let stand on a wire rack for 5 minutes.</p>
+    <h3>Step 11</h3>
+    <p>serve immdeieatly for the best taste!</p>
+	<img alt="jpg" style="width: 200px;"src="mac.jpeg">
+
+
+
+
 </body>
-</html>
