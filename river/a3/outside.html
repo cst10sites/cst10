@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lesson 4</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="favicon" href="images.ico">
+<style>
+   
+</style>
+</head>
+<body>
+
+<div>
+
+  <!-- navbar -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="moreLinks">
+      <a href="../Lesson1/index.html">Lesson 1</a>
+      <a href="../Lesson2/index.html">Lesson 2</a>
+      <a href="../Lesson3/index.html">Lesson 3</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+ 
+  <!--content-->
+  <div class="content">
+    <h1>Table</h1>
+    <p>Click <a href="inside.html">here</a> to return to previous table</p>
+    <table style="width: 50%;">
+      <tr>
+        <th>&lt;Head&gt; Tags</th>
+        <th>Definition</th>
+        <th>Example(s) if applicable</th>
+     
+      </tr>
+
+         <tr>
+        <td>&lt;!DOCTYPE html&gt;</td>
+        <td>an instruction to the web browser that specifies the version of HTML used in the document, ensuring that the webpage renders consistently across different browsers.</td>
+        <td>It made this html file work, but i suppose there aren't any examples.</td>
+     
+
+           <tr>
+     <td>&lt;style&gt;</td>
+        <td> It determines how web elements look (their layout, colors, fonts, and sizing) using Cascading Style Sheets (CSS).</td>
+          <td style="background-color: black; color: white;"> Style made this black and white!</td>
+     
+      </tr>
+
+               <tr>
+     <td>&lt;html lang="en"&gt;</td>
+        <td>This page is set to “en” for English. This tag helps websites such as Google Translate know the default language for this page is English. </td>
+        <td>This message is in english.</td>
+   
+      </tr>
+
+               <tr>
+     <td> &lt;title&gt; &lt;/title&gt; </td>
+        <td>Creates a title in the website.</td>
+        <td><img src="src_html.jpg" width="150" height="100"> </td>
+     
+      </tr>
+
+                <tr>
+     <td>&lt;meta http-equiv="refresh" content="0; url=$URL"&gt;</td>
+        <td>An HTML element that instructs a web browser to automatically reload the current page or redirect the user to a different URL after a specified number of seconds.</td>
+        <td>No examples</td>
+     
+      </tr>
+
+               <tr>
+     <td>&lt;meta charset="UTF-8"&gt;</td>
+        <td> tag is an HTML element that defines the character encoding for a web page, telling the browser how to translate computer bytes into readable text</td>
+        <td>No examples</td>
+
+      </tr>
+
+               <tr>
+     <td> &lt;link rel="stylesheet" href="styles.css"&gt;</td>
+        <td>Tag that points to an external CSS file</td>
+        <td>The homepage and this page point to a common style.css file that controls the look of these pages.
+
+</td>
+ 
+      </tr>
+
+               <tr>
+     <td>&lt;link rel="icon" type="image/x-icon" href="/favicon.ico"&gt;</td>
+        <td>Tag that adds a favicon</td>
+        <td><img src="screenshot.png" width="150" height="100"></td>
+ 
+      </tr>
+
+   
+
+
+    </table>
+   
+  </div>
+ 
+
+</div>
+
+<!--JavaScript will be explored later-->
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none"; // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+
+</body>
+</html>
+
