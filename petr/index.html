@@ -2,41 +2,150 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>List of Assignments</title>
-<link rel="icon" type="image/png" href="favicon.ico">
+<title>Assigment 3</title>
+<link rel="stylesheet" href="style.css">
+<!--Moved internal CSS to style.css-->
 <style>
-body {
-    background-color: grey;
-    color: white;
-    margin: 50px;
-    font-family: Verdana;
-}
 
-div {
-	padding: 50px;
-	background-color: black;
-}
+    .btn {
+      /* class="btn" */
+      background-color: lightcoral;
+      color: gold;
+      font-size: 1.2em; /* 1em is normal size*/
+      padding: 10px 10px;
+      /* border: 4 things to add */
+      border-style: solid;
+      border-color: blueviolet;
+      border-radius: 10px;
+      border-width: 5px;
+      text-decoration: none; /* remove underline */
+      display: inline-block; /* prevent block text */
 
-a {
-    color: yellow;
-}
+    }
 
+    a.btn:hover {
+      background-color: darkred;
+    }
 </style>
+</head>
 <body>
-<div>
-<h1 id="self">Welcome</h1>
-<ul>
-    <li><a href="a1" target="_blank">Assignment 1</a></li>
-    <li><a href="a2" target="_blank">Assignment 2</a></li>
-    <li><a href="a3" target="_blank">Assignment 3</a></li>
-    <li><a href="a4" target="_blank">Assignment 4</a></li>
-    <li><a href="project" target="_blank">Final Project</a></li>
-</ul>
-</div>
-<script>
-    var current = window.location.pathname.split("/").filter(Boolean).pop();
-    current = current.charAt(0).toUpperCase() + current.slice(1);
-    document.getElementById("self").innerHTML = "Welcome to " + current + "'s CST 10 Portfolio";
-</script>
-</body>
-</html>
+
+    <h1>HTML/CSS Guide</h1>
+    <h2>Common HTML Tags inside &lt;body&gt;</h2>
+
+    <table style="width: 100%;">
+      <tr><!--table row-->
+        <!--table header: used for first row only, optional: define column width -->
+        <th style="width:25%"> &lt;body tag&gt;</th>
+        <th style="width:25%">Defenetion</th>
+        <th style="width:25%">Example(s)</th>
+      </tr>
+
+      <tr>
+        <!--table data-->
+        <td>&lt;br&gt; and &lt;hr&gt;</td>
+        <td>Break line</td>
+        <td> &lt;br&gt; &lt;hr&gt; </td>
+      </tr>
+
+      <tr>
+        <!--table data-->
+        <td>&lt;p&gt; &lt;/p&gt;</td>
+        <td>Starts a paragraph</td>
+        <td>
+          <p>This is a paragraph 1</p>
+          <p>This is paragraph 2</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>&lt;span&gt; &lt;/span&gt;</td>
+        <td>Style specific part of text</td>
+        <td>
+          <p>This is a sentence where only <span style="color: red; font-weight: bold;">this part</span> will turn red and bold.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>&lt;a href="link"&gt;…&lt;/a&gt;</td>
+        <td>Hyperlink to another page</td>
+        <td>Click <a href="outside.html">here</a> to open outside.html.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;img src="link" alt="pic"&gt;</td>
+        <td>Image</td>
+        <td>
+          <img alt="Ingredients" style="width: 100px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJ4IZbkwwyJD4dq7MObC7x1gpYN0xVkTOV_X9T9ZCMQ&s=10">
+          <!--absolute width-->
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          &lt;ol&gt;<br>
+          &lt;li&gt;…&lt;/li&gt;<br>
+          …<br>
+          &lt;/ol&gt;
+        </td>
+        <td>Ordered List</td>
+        <td>
+          <ol>
+            <li>Turn on the computer.</li>
+            <li>Open your web browser.</li>
+            <li>Navigate to the website.</li>
+          </ol>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          &lt;h1&gt; &lt;/h1&gt;<br>
+          &lt;h5&gt; &lt;/h5&gt;
+        </td>
+        <td>Heading</td>
+        <td><h1>Heading</h1></td>
+      </tr>
+
+      <tr>
+        <td>
+          &lt;iframe src="link"&gt;<br>
+          &lt;/iframe&gt;
+        </td>
+        <td>Inline Frame</td>
+        <td>
+          <iframe src="https://wikipedia.org" width="100" height="200" title="Wikipedia Frame"></iframe>
+        </td>
+      </tr>
+
+      <tr>
+        <td>&lt;div&gt;</td>
+        <td>Empty box</td>
+        <td>
+          <div style="width: 200px; height: 100px; border: 1px solid black;"></div>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td>&lt;button&gt;</td>
+        <td>Creates a button</td>
+        <td><button type="button">Click Me!</button></td>
+      </tr>
+    </table>
+
+    <a class="btn" target="_blank" href="outside.html">
+      Next Page
+    </a>
+
+    <!--JavaScript will be explored later-->
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>

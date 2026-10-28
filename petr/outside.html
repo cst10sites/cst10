@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assigment 3</title>
+<link rel="stylesheet" href="style.css">
+<!--Moved internal CSS to style.css-->
+<style>
+.btn {
+      /* class="btn" */
+      background-color: darkslateblue;
+      color: orangered;
+      font-size: 1.2em; /* 1em is normal size*/
+      padding: 10px 15px;
+      /* border: 4 things to add */
+      border-style: solid;
+      border-color: purple;
+      border-radius: 15px;
+      border-width: 5px;
+      text-decoration: none; /* remove underline */
+      display: inline-block; /* prevent block text */
+    }
+
+    a.btn:hover {
+      background-color: darkred;
+    }
+</style>
+</head>
+<body>
+
+<div>
+
+  <!-- navbar -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="moreLinks">
+      <a href="../Lesson1/index.html">Lesson 1</a>
+      <a href="../Lesson2/index.html">Lesson 2</a>
+      <a href="../Lesson3/index.html">Lesson 3</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+  
+  <!--content-->
+  <div class="content">
+    <h1>HTML Guide</h1>
+    <h2>Common HTML Tags outside &lt;body&gt;</h2>
+
+    <a class="btn" target="_blank" href="index.html">
+      Homepage
+    </a>
+
+    <table style="width: 50%;">
+      <tr><!--table row-->
+        <!--table header: used for first row only, optional: define column width -->
+        <th style="width:25%">&lt;head tag&gt;</th>
+        <th style="width:25%">Defenetion</th>
+        <th style="width:25%">Example(s)</th>
+      </tr>
+
+      <tr>
+        <!--table data-->
+        <td>&lt;!DOCTYPE html&gt;</td>
+        <td>Mandatory instruction</td>
+        <td>No example</td>
+      </tr>
+
+      <tr>
+        <!--table data-->
+        <td>&lt;html lang="en"&gt;</td>
+        <td>Specifies that the primary language of the webpage content is English</td>
+        <td>This tag helps websites such as Google Translate know the default language for this page is English.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;meta charset="UTF-8"&gt;</td>
+        <td>Tells the web browser to use the UTF-8 character setting</td>
+        <td>No examples</td>
+      </tr>
+
+      <tr>
+        <td>&lt;meta http-equiv="refresh" content="0; url=$URL"&gt;</td>
+        <td>This a meta refresh redirect that automatically forwards the user's web browser to a new URL upon loading</td>
+        <td>No examples</td>
+      </tr>
+
+      <tr>
+        <td>&lt;title&gt; ... &lt;/title&gt;</td>
+        <td>Defines the official name or title of a webpage</td>
+        <td>
+          <img src="Screenshot.png" alt="" width="300">
+        </td>
+      </tr>
+
+      <tr>
+        <td>&lt;style&gt;</td>
+        <td>Element used to define internal CSS rules that change the appearance</td>
+        <td>
+          &lt;style&gt;<br>
+          body {<br>
+          &nbsp;&nbsp;background-color: #f0f2f5;<br>
+          &nbsp;&nbsp;color: #333333;<br>
+          }<br>
+          &lt;/style&gt;
+        </td>
+      </tr>
+
+      <tr>
+        <td>&lt;link&gt;</td>
+        <td>Element used to connect the current webpage to an external resource</td>
+        <td>No example</td>
+      </tr>
+
+      <tr>
+        <td>&lt;meta&gt;</td>
+        <td>HTML element used to provide metadata about a web page</td>
+        <td>No examples</td>
+      </tr>
+
+      <tr>
+        <td>&lt;script&gt;</td>
+        <td>Its an HTML element used to embed or reference executable client-side JavaScript code directly within your webpage.</td>
+        <td>No examples</td>
+      </tr>
+
+      <tr>
+        <td>&lt;head&gt; &lt;/head&gt;</td>
+        <td>This tag is a mandatory container element that holds all the invisible metadata and configuration settings for a webpage.</td>
+        <td>
+          &lt;head&gt;<br>
+          (All the code)<br>
+          &lt;/head&gt;
+        </td>
+      </tr>
+    </table>
+    
+  </div>
+
+</div>
+
+<!--JavaScript will be explored later-->
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none"; // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+
+</body>

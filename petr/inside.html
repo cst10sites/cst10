@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lesson 4</title>
+<link rel="stylesheet" href="style.css">
+<!--Moved internal CSS to style.css-->
+<style>
+</style>
+</head>
+<body>
+
+<div>
+
+  <!-- navbar -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="moreLinks">
+      <a href="../Lesson1/index.html">Lesson 1</a>
+      <a href="../Lesson2/index.html">Lesson 2</a>
+      <a href="../Lesson3/index.html">Lesson 3</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+  
+  <!--content-->
+  <div class="content">
+    <h1>Tables</h1>
+    <p>
+      Click <a href="index.html">here</a> to return to the homepage.
+    </p>
+
+    <table style="width: 50%;">
+      <tr><!--table row-->
+        <!--table header: used for first row only, optional: define column width -->
+        <th style="width:25%"> < body > tags</th>
+        <th style="width:25%">Defenetion</th>
+        <th style="width:25%">Example(s)</th>
+        
+      </tr>
+
+      <tr>
+        <!--table data-->
+        <td>< p > < /p ></td>
+        <td>< br > and < hr ></td>
+        <td>< span > < /span ></td>
+        <td>< a href="link">…< /a ></td>
+      
+      </tr>
+      
+      <tr>
+<td> < iframe src="link">
+< /iframe >
+</td>
+<td> Inline Frame </td>
+<td><iframe src="https://wikipedia.org" width="100%" height="400" title="Wikipedia Frame">
+</iframe>
+ </td>
+      <tr>
+        <!--table data-->
+        <td>oo</td>
+        <td>10</td>
+        <td>8</td>
+        
+      </tr>
+
+    </table>
+
+  </div>
+
+</div>
+
+<!--JavaScript will be explored later-->
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none"; // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+
+</script>
+
+</body>
+</html>
+
