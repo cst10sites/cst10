@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lesson 4</title>
+<link rel="stylesheet" href="style.css">
+<!--Moved internal CSS to style.css-->
+<style>
+</style>
+</head>
+<body>
+
+<div>
+
+  <!-- navbar -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="moreLinks">
+      <a href="../Lesson1/index.html">Lesson 1</a>
+      <a href="../Lesson2/index.html">Lesson 2</a>
+      <a href="../Lesson3/index.html">Lesson 3</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+  
+  <!--content-->
+  <div class="content">
+    <h1>outside html code</h1>
+    <p>
+      Click <a href="index.html">here</a> to return to the homepage.
+    </p>
+
+    <table style="width: 50%;">
+      <tr><!--table row-->
+        <!--table header: used for first row only, optional: define column width -->
+        <th style="width:25%">&lt;body tags&gt;</th>
+        <th style="width:25%">definition</th>
+        <th style="width:25%">example</th>
+        
+      </tr>
+
+      <tr>
+        <!--table data-->
+        <td>&lt;link rel="stylesheet" href="style.css"&gt;</td>
+        <td>moves some external code to another page, style.css</td>
+        <td>8</td>
+        
+      </tr>
+
+      <tr>
+        <!--table data-->
+        <td>&lt;style&gt;&lt;/style&gt;</td>
+        <td>describes the internal CSS</td>
+        <td><style>
+        .black-box {
+            background-color: #000000; 
+            color: #ffffff;            
+            padding: 20px;             
+            border-radius: 5px;        
+            width: fit-content;        
+        }
+    </style><div class="black-box">
+    this is a black box with white text becuse of style code</td>
+        
+      </tr>
+      <tr>
+          <!--table data-->
+        <td>&lt;!DOCTYPE html&gt;</td>
+        <td>the doctype</td> 
+        <td>no example</td>
+        <tr>
+          <tr>
+          <!--table data-->
+        <td>&lt;html lang="en"&gt;</td>
+        <td>the page language</td> 
+        <td>this is english</td>
+        <tr>
+          <tr>
+        <!--table data-->
+        <td>&lt;title&gt;&lt;/title&gt;</td>
+        <td>the title of the page</td> 
+        <td><img src="screenshot.png" alt="frog"></td>
+        <tr>
+          <tr>
+          <!--table data-->
+        <td>&lt;head&gt;&lt;/head&gt;</td>
+        <td>everything in the head, like the title and the favicon</td> 
+        <td>no example</td>
+        <tr>           <tr>
+          <!--table data-->
+        <td>&lt;body&gt;&lt;/body&gt;</td>
+        <td>all the stuff on the page</td> 
+        <td>this whole article is the example</td>
+        <tr>
+          
+
+
+    </table>
+
+  </div>
+
+</div>
+
+<!--JavaScript will be explored later-->
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none"; // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+
+</body>
+</html>
