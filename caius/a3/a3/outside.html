@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>a4 oustide</title>
+<link rel="icon" type="image/x-icon" href="banana.ico">
+<link rel="stylesheet" href="style.css">
+<!--Moved internal CSS to style.css-->
+<style>
+</style>
+</head>
+<body>
+
+<div>
+
+    
+    <h1>HTML Guide</h1>
+    <h2>Common HTML Tags outside &lt;body&gt;</h2>
+
+    <p>
+      <a class="btn" href="index.html">&lt;body&gt; tags</a>
+    </p>
+
+    <table style="width: 100%;">
+      <tr><!-- table row-->
+        <!-- table header: used first row only, optional: define column width-->
+        <th style="width: 34%">Tag</th>
+        <th style="width: 33%">Defenition</th>
+        <th style="width: 33%">Examples</th>
+        
+      </tr>
+
+      <tr>
+        <td>&lt;!DOCTYPE html&gt;</td>
+        <td>Tells the web browser to render the page in "Standards Mode" using the HTML5 specification</td>
+        <td>No examples</td>
+      </tr>
+
+      <tr>
+        <td>&lt;html lang="en"&gt;</td>
+        <td>Lets google translate or other translators know what the base language for our site is</td>
+        <td>No examples</td>
+      </tr>
+
+      <tr>
+        <td>&lt;meta charset="UTF-8"&gt;</td>
+        <td>Tells the web browser how to decode the text in your HTML file so it can show letters, symbols, and emojis properly</td>
+        <td>No examples</td>
+      </tr>
+
+      <tr>
+        <td>&lt;meta http-equiv="refresh" content="0; url=$URL"&gt;</td>
+        <td>Instantly redirects the user's browser to $URL</td>
+        <td>No examples</td>
+      </tr>
+
+      <tr>
+        <td>&lt;title&gt; &lt;/title&gt;</td>
+        <td>Adds a title to the head of your website</td>
+        <td><img style="width: 175px;" src="header.png" alt="header"></td>
+      </tr>
+
+      <tr>
+        <td>&lt;link rel="" href="link.css"&gt;</td>
+        <td>links the website to another file</td>
+        <td>No examples</td>
+      </tr>
+
+      <tr>
+        <td>&lt;style&gt; &lt;/style&gt;</td>
+        <td>Used to change the visual presentation of a webpage</td>
+        <td style="background-color: navy; color: white;"> The background and  font color have changed</td>
+      </tr>
+
+      <tr>
+        <td>&lt;link rel="icon" type="image/x-icon" href="banana.ico"&gt;</td>
+        <td>Adds an image alongside your title</td>
+        <td><img style="width: 175px;" src="header.png" alt="favicon"></td>
+      </tr>
+
+    </table>
+
+  </div>
+
+</div>
+
+<!--JavaScript will be explored later-->
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none"; // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+
+</body>
+</html>
