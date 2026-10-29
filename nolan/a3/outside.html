@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Outside</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Moved internal CSS to style.css-->
+    <style></style>
+  </head>
+  <body>
+    <!--content-->
+    <div class="content">
+      <h1>HTML/CSS Guide</h1>
+      <h2>Common HTML Tags</h2>
+      <p></p>
+      <table style="width: 50%;">
+        <tr>
+          <th style="width: 33.33%;">Tag</th>
+          <th style="width: 33.33%;">Definition</th>
+          <th style="width: 33.33%;">Examples</th>
+        </tr>
+        <tr>
+          <td>&lt;!DOCTYPE html&gt;</td>
+          <td>Declares that the document uses HTML5.</td>
+          <td>!DOCTYPE html</td>
+        </tr>
+        <tr>
+          <td>&lt;html lang="*"&gt;</td>
+          <td>Sets page language to a language.</td>
+          <td>&lt;html lang="en"&gt; makes the page language English.</td>
+        </tr>
+        <tr>
+          <td>&lt;meta charset="UTF-8"&gt;</td>
+          <td>Sets the character encoding of the webpage.</td>
+          <td>&lt;meta charset="UTF-8"&gt;</td>
+        </tr>
+        <tr>
+          <td>&lt;meta http-equiv="refresh" content="0; url=$URL"&gt;</td>
+          <td>Redirects to another URL after a set amount of time.</td>
+          <td>&lt;meta http-equiv="refresh" content="5; url=https://google.com"&gt; redirects to Google after 5 seconds.</td>
+        </tr>
+        <tr>
+          <td>&lt;title&gt;...&lt;/title&gt;</td>
+          <td>Sets the title displayed in the tab.</td>
+          <td>&lt;title&gt;Website&lt;/title&gt; makes the website name Website.</td>
+        </tr>
+        <tr>
+          <td>&lt;style&gt;...&lt;/style&gt;</td>
+          <td>Defines the internal CSS that controls the style of the webpage.</td>
+          <td> &lt;style&gt; <br> #example { background-color: black; } <br> &lt;/style&gt; </td>
+        </tr>
+        <tr>
+          <td>&lt;link rel="stylesheet" href="style.css"&gt;</td>
+          <td>Links to an external CSS file.</td>
+          <td>The homepage and this page can use the same style.css file to control the appearance of both pages.</td>
+        </tr>
+        <tr>
+          <td>&lt;link rel="icon" href="favicon.ico"&gt;</td>
+          <td>Adds a favicon, the small icon displayed in the browser tab.</td>
+          <td>&lt;link rel="icon" href="favicon.ico"&gt; makes favicon.ico the website favicon.</td>
+        </tr>
+      </table>
+      <br>
+      <a href="inside.html" style="position: fixed; bottom: 100px; right:110px; display: inline-block; padding: 20px 40px; font-size: 250px; background-color: #DF8DF2; color: white; text-decoration: none; border-radius: 8px; font-family: sans-serif;">Back &gt;</a>
+    </div>
+    <!--JavaScript will be explored later-->
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+  </body>
+</html>
