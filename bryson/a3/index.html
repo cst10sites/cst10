@@ -1,38 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Error 404</title>
-<link rel="icon" type="image/png" href="favicon.ico">
-<style>
-body {
-    background-color: grey;
-    color: white;
-    margin: 50px;
-    font-family: Verdana;
-}
-
-div {
-	padding: 50px;
-	background-color: black;
-}
-
-p {
-    color: yellow;
-}
-
-</style>
+  <meta charset="UTF-8">
+  <title>Assignment 3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<div>
-<h1>Error 404</h1>
-<p>
-    This assignment has not been uploaded. Upload all the files into this <span id="self"></span> folder and replace the index.html file.
-</p>
-</div>
-<script>
-    var current = window.location.pathname.split("/").filter(Boolean).pop();
-    current = current.charAt(0).toLowerCase() + current.slice(1);
-    document.getElementById("self").innerHTML = current;
-</script>
+  <a class="button" href="outside.html">Next Page &raquo;</a>
+  <h1>HTML/CSS Guide</h1>
+  <h2>Common HTML Tags</h2>
+  <table>
+    <tr>
+      <th>Tag</th>
+      <th>Definition</th>
+      <th>Examples</th>
+    </tr>
+    <tr>
+      <td>&lt;img src="link" alt="pic"&gt;</td>
+      <td>Image</td>
+      <td><img src="pumpkin.jpg" alt="Cartoon pumpkin" width="150"></td>
+    </tr>
+    <tr>
+      <td>&lt;a href="link"&gt;...&lt;/a&gt;</td>
+      <td>Hyperlink to another page</td>
+      <td>Click <a href="https://www.pumpkin.com">here</a> for more!</td>
+    </tr>
+    <tr>
+      <td>&lt;p&gt;&lt;/p&gt;</td>
+      <td>Paragraph</td>
+      <td>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;ol&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;</td>
+      <td>Ordered (numbered) list</td>
+      <td>
+        <ol>
+          <li>First</li>
+          <li>Second</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>Unordered (bulleted) list</td>
+      <td>
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;br&gt; and &lt;hr&gt;</td>
+      <td>Line break and horizontal line</td>
+      <td>
+        Line one<br>Line two
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;span&gt;...&lt;/span&gt;</td>
+      <td>Inline container for styling text</td>
+      <td>Only <span style="color: red;">this text</span> is red.</td>
+    </tr>
+    <tr>
+      <td>&lt;h1&gt;...&lt;/h1&gt;<br>...<br>&lt;h6&gt;...&lt;/h6&gt;</td>
+      <td>Headings, largest (h1) to smallest (h6)</td>
+      <td>
+        <h1>Heading 1</h1>
+        <h3>Heading 3</h3>
+        <h6>Heading 6</h6>
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;strong&gt; and &lt;em&gt;</td>
+      <td>Bold text and italic text</td>
+      <td><strong>Bold</strong> and <em>italic</em></td>
+    </tr>
+    <tr>
+      <td>&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;td&gt;&lt;/table&gt;</td>
+      <td>Table with rows, headers and data cells</td>
+      <td>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Score</th>
+          </tr>
+          <tr>
+            <td>Noland</td>
+            <td>7</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <a class="button" href="outside.html">Next Page &raquo;</a>
 </body>
 </html>
