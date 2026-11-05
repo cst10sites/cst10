@@ -1,38 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Error 404</title>
-<link rel="icon" type="image/png" href="favicon.ico">
-<style>
-body {
-    background-color: grey;
-    color: white;
-    margin: 50px;
-    font-family: Verdana;
-}
+    <head>
+        <meta charset="UTF-8">
+        <title>My Recipe - Apple Pie</title>
+        <style>
+            body {
+                background-color: #fff8ed;
+                color: #333333;
+                margin: 30px;
+            }
 
-div {
-	padding: 50px;
-	background-color: black;
-}
+            h2 {
+                color: #8b2929;
+                border-bottom: 2px solid #d9b38c;
+                padding-bottom: 5px;
+            }
 
-p {
-    color: yellow;
-}
+            li {
+                margin-bottom: 12px;
+            }
 
-</style>
-<body>
-<div>
-<h1>Error 404</h1>
-<p>
-    This assignment has not been uploaded. Upload all the files into this <span id="self"></span> folder and replace the index.html file.
-</p>
-</div>
-<script>
-    var current = window.location.pathname.split("/").filter(Boolean).pop();
-    current = current.charAt(0).toLowerCase() + current.slice(1);
-    document.getElementById("self").innerHTML = current;
-</script>
-</body>
+            .ingredients {
+                width: 50%;
+                float: left;
+            }
+
+            .recipe-images {
+                width: 40%;
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Introduction</h2>
+        <p>Apple pie has been a very special food from my childhood. One of my first memories as a kid was my grandma making apple pie for me in Croatia. The first known recipe was made in England in 1381. Apple pie became a prevalent symbol of patriotism and culture in the USA in the 20th century. Apple pie can be made with many types of apples such as Gala, Granny Smith, and even canned apples.</p>
+        <h2>Recipe</h2>
+        <div class="ingredients">
+            <ul>
+                <li>8 small Granny Smith apples, or as needed</li>
+                <li>
+                    <sup>1</sup>⁄ <sub>2</sub> cup unsalted butter
+                </li>
+                <li>3 tablespoons all-purpose flour</li>
+                <li>
+                    <sup>1</sup>⁄ <sub>2</sub> cup white sugar
+                </li>
+                <li>
+                    <sup>1</sup>⁄ <sub>2</sub> cup packed brown sugar
+                </li>
+                <li>
+                    <sup>1</sup>⁄ <sub>4</sub> cup water
+                </li>
+                <li>1 (9 inch) double-crust pie pastry, thawed</li>
+            </ul>
+        </div>
+        <div class="recipe-images">
+            <img src="https://joyfoodsunshine.com/wp-content/uploads/2019/08/best-apple-pie-recipe-from-scratch-8.jpg" alt="Apple pie" style="width: 300px">
+            <img src="https://www.argent-label.com/wp-content/uploads/2024/04/Enjoy.jpg" alt="enjoy" style="width: 300px;">
+        </div>
+        <div style="clear: both;"></div>
+        <h2>Instructions</h2>
+        <ul>
+            <li>Gather the ingredients. Preheat the oven to 425 degrees F (220 degrees C). Peel and core apples, then thinly slice. Set aside.</li>
+            <li>Melt butter in a saucepan over medium heat. Add flour and stir to form a paste; cook until fragrant, about 1 to 2 minutes. Add both sugars and water; bring to a boil. Reduce the heat to low and simmer for 3 to 5 minutes. Remove from the heat.</li>
+            <li>Press one pastry into the bottom and up the sides of a 9-inch pie pan. Roll out remaining pastry so it will overhang the pie by about <sup>1</sup>⁄ <sub>2</sub> inch. Cut pastry into eight 1-inch strips. </li>
+            <li>Place sliced apples into the bottom crust, forming a slight mound. Lay four pastry strips vertically and evenly spaced over apples, using longer strips in the center and shorter strips at the edges.</li>
+            <li>Make a lattice crust: Fold back the first and third strips. Lay one of the remaining strips horizontally across the pie, then unfold the first and third strips over it.</li>
+            <li>Fold back the second and fourth vertical strips. Lay another strip horizontally across the pie, then unfold the second and fourth strips over it. Continue alternating and weaving in the remaining strips to form a lattice. Trim excess pastry as needed, then pinch the edges to seal.</li>
+            <li>Slowly pour the sugar-butter mixture over the lattice, allowing it to seep through to the apples. Brush some over the pastry, taking care not to let the mixture run over the sides.</li>
+            <li>Bake in the preheated oven for 15 minutes. Reduce the oven temperature to 350 degrees F (175 degrees C) and continue baking until the crust is golden brown, the filling is bubbling through the lattice, and the apples are tender, 35 to 45 minutes. Loosely cover the crust edges with foil if they begin to brown too quickly. Transfer the pie to a wire rack and let cool before slicing.</li>
+        </ul>
+    </body>
 </html>
