@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Moved internal CSS to style.css-->
+    <style></style>
+  </head>
+  <body>
+    <h1>HTML/CSS Guide</h1>
+    <h2>Common HTML Tags inside body</h2>
+    <div>
+      <!--content-->
+      <div class="content">
+        <h1>Table</h1>
+        <p>
+          <a href="outside.html" class="button-link">outside.html</a>
+        </p>
+        <table style="width: 50%;">
+          <tr>
+            <!--table row-->
+            <!--table header: used for first row only-->
+            <th>Tag</th>
+            <th>Definition</th>
+            <th>Examples</th>
+          </tr>
+          <tr>
+            <td>&lt;p>&lt;/p></td>
+            <td>displays paragraphs</td>
+            <td>
+              <p> This is a random paragraph.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;img src="link" alt="pic"></td>
+            <td>displays image</td>
+            <td>
+              <img src="https://static.wikia.nocookie.net/glungussy-wussy/images/0/06/GlungusImageRL.png/revision/latest?cb=20260528141825" alt="glungusCat">
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;h1>&lt;/h1></td>
+            <td>used to write headers</td>
+            <td>
+              <h1>Random Header</h1>
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;a href="https://link.com">&lt;/a></td>
+            <td>hyperlink to another website</td>
+            <td>
+              <a href="https://www.kfc.ca">KFC link</a>
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;span>&lt;/span></td>
+            <td>only affects the CSS of specific part of the text</td>
+            <td>
+              <span style="color: red;">Red</span> text
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;ol> <br>&lt;li>&lt;/li> <br>&lt;/ol> </td>
+            <td>lists</td>
+            <td>
+              <ol>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+                <li>item4</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;iframe src="link">&lt;/iframe></td>
+            <td>used to embed apps</td>
+            <td>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.74873232348!2d-123.16671675872759!3d49.26220827150908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673aef44b8213%3A0xfed77b389f0f9a70!2sKitsilano%20Secondary%20School!5e0!3m2!1sen!2sca!4v1793893590383!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;br>&lt;/br></td>
+            <td>used to begin a new line</td>
+            <td>Like <br>This </td>
+          </tr>
+          <tr>
+            <td>&lt;strong>&lt;/strong></td>
+            <td>used to make text bold</td>
+            <td>Like <strong>This</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;sup>&lt;/sup></td>
+            <td>used to write exponents</td>
+            <td>Like This: 3 <sup>3</sup> = 27 </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!--JavaScript will be explored later-->
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+  </body>
+</html>

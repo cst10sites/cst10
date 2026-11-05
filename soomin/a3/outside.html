@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <!--Moved internal CSS to style.css-->
+    <style></style>
+  </head>
+  <body>
+    <h1>HTML Guide</h1>
+    <h2>HTML Tags outside body</h2>
+    <div>
+      <!--content-->
+      <div class="content">
+        <h1>Table</h1>
+        <p>
+          <a href="inside.html" class="button-link">inside.html</a>
+        </p>
+        <table style="width: 50%;">
+          <tr>
+            <!--table row-->
+            <!--table header: used for first row only-->
+            <th>Tags</th>
+            <th>Definition</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <!--table data-->
+            <td>&lt;!DOCTYPE html></td>
+            <td>Defines the file as html</td>
+            <td>No examples</td>
+          </tr>
+          <tr>
+            <!--table data-->
+            <td>&lt;html lang="en"></td>
+            <td>sets the language to the html + begins the html</td>
+            <td>This page is set to “en” for English. This tag helps websites such as Google Translate know the default language for this page is English.</td>
+          </tr>
+          <tr>
+            <!--table data-->
+            <td>&lt;meta charset="UTF-8"></td>
+            <td>sets the character set of the html</td>
+            <td>This page is set to “UTF-8”.</td>
+          </tr>
+          <tr>
+            <!--table data-->
+            <td>&lt;meta http-equiv="refresh" content="0; url=$URL"></td>
+            <td>redirects the user to another page</td>
+            <td></td>
+          </tr>
+          <tr>
+            <!--table data-->
+            <td>style="background-color:black; color: white;"</td>
+            <td>An example of internal CSS. This sets the background color of the table item to be black, and the text color to be white</td>
+            <td style="background-color:black; color: white;">Like this</td>
+          </tr>
+          <tr>
+            <!--table data-->
+            <td>&lt;link rel="stylesheet" href="style.css"></td>
+            <td>refers to the external CSS in a seperate file</td>
+            <td>
+              <img src="extCSS.png" alt="external CSS">
+            </td>
+          </tr>
+          <tr>
+            <!--table data-->
+            <td>&lt;link rel="icon" type="image/x-icon" href="favicon.ico"></td>
+            <td>sets the favicon to a specific image</td>
+            <td>
+              <img src="favicon.png" alt="image of favicon">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!--JavaScript will be explored later-->
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+  </body>
+</html>
