@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lesson 4</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="/images.ico">
+<style>
+  h1, h2 { color: ghostwhite;
+
+   }
+</style>
+</head>
+<body>
+<h1>HTML/CSS guide</h1>
+<h2>common HTML tags</h2>
+<div>
+
+  <!-- navbar -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="moreLinks">
+      <a href="../Lesson1/index.html">Lesson 1</a>
+      <a href="../Lesson2/index.html">Lesson 2</a>
+      <a href="../Lesson3/index.html">Lesson 3</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+ 
+  <!--content-->
+  <div class="content">
+    <h1>Table</h1>
+    <p>Click <a href="outside.html">here</a> to return to next table</p>
+    <table style="width: 100%;">
+      <tr>
+        <th>&lt;Body&gt; Tags</th>
+        <th>Definition</th>
+        <th>Example(s) if applicable</th>
+     
+      </tr>
+
+         <tr>
+        <td>&lt;img src="link" alt="pic"&gt;</td>
+        <td>Creates an image</td>
+        <td><img alt="slayer logo" style="width: 100px;" src="https://thumbs.dreamstime.com/b/slayer-band-vector-logo-slayer-thrash-metal-band-vector-logo-eagle-seasons-abyss-era-slayer-logo-isolated-white-258282463.jpg">
+</td>
+     
+
+           <tr>
+
+     <td>&lt;p&gt;&lt;/p&gt;</td>
+     <td> Creates a paragraph</td>
+     <td><p>I love Slayer</p>
+     <p>I still love Slayer</p></td>
+     
+      </tr>
+
+               <tr>
+     <td>&lt;a href="link"...&gt;&lt;/a&gt;</td>
+        <td>Creates a hyperlink</td>
+        <td>Click<a href="https://store.slayer.net/?srsltid=AYCX9vLuRyodRETtg9HCFGJfae1Cvm209yDIHhCZ9q6NBolyHPV5u2FC"> here</a> for the official slayer store site.
+</td>
+   
+      </tr>
+
+               <tr>
+     <td> &lt;ol&gt; &lt;li&gt; &lt;/li&gt; &lt;/ol&gt;</td>
+        <td>Creates an ordered list</td>
+        <td><ol>
+<li> Slayer</li>
+<li> Death</li>
+<li> Pantera</li>
+</ol>
+
+</td>
+     
+      </tr>
+
+                <tr>
+     <td>&lt;br&gt; and &lt;hr&gt;</td>
+        <td>Creates a line break or a horizontal rule</td>
+        <td> This is a <br>line break!</td>
+     
+      </tr>
+
+               <tr>
+     <td>&lt;iframe src="link"&gt;
+&lt;/iframe&gt;
+
+</td>
+        <td> HTML element embeds a separate nested browsing context and document inside your current web page.</td>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47267.680472307096!2d60.66887063905845!3d56.76892282407751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c169851e5d86fd%3A0x940c85acd028dc3e!2z0JzRg9C90LjRhtC40L_QsNC70YzQvdC-0LUg0JDQstGC0L7QvdC-0LzQvdC-0LUg0KPRh9GA0LXQttC00LXQvdC40LUgItCm0LXQvdGC0YDQsNC70YzQvdCw0Y8g0JPQvtGA0L7QtNGB0LrQsNGPINCR0L7Qu9GM0L3QuNGG0LAg4oSWIDIwIg!5e0!3m2!1sen!2sca!4v1793207803578!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></td>
+
+      </tr> 
+
+
+               <tr>
+     <td> &lt;span&gt; &lt;/span&gt;</td>
+        <td>An inline HTML container used to mark up a specific portion of text or a document.</td>
+        <td> Only this text is <span style="color: darkred;">dark red.</span>
+
+</td>
+ 
+      </tr>
+
+               <tr>
+     <td>&lt;h1&gt;...&lt;h1&gt;
+…
+&lt;h6&gt;...&lt;h6&gt;
+</td>
+        <td>Creates headings up to six.</td>
+        <td><h1 style="color: black;">Slayer</h1><h2 style="color: black;">Slayer</h2> <h3> Slayer</h3><h4> Slayer</h4> <h5> Slayer</h5>
+<h6>Slayer</h6>
+</td>
+ 
+      </tr>
+
+                 <tr>
+     <td>&lt;td&gt; &lt;/td&gt;</td>
+        <td>Creates a cell in a table.</td>
+        <td> I used it to write this!</td>
+ 
+      </tr>
+
+                 <tr>
+     <td>&lt;div&gt; &lt;/div&gt;</td>
+        <td>Groups HTML elements on a webpage.</td>
+        <td> It made the Home bar on this page!</td>
+ 
+      </tr>
+
+
+    </table>
+   
+  </div>
+ 
+
+</div>
+
+<!--JavaScript will be explored later-->
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none"; // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+
+</body>
+</html>
