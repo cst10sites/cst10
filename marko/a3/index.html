@@ -1,38 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Error 404</title>
-<link rel="icon" type="image/png" href="favicon.ico">
-<style>
-body {
-    background-color: grey;
-    color: white;
-    margin: 50px;
-    font-family: Verdana;
+	<meta charset="UTF-8">
+	<title>Assignment 3</title>
+	
+
+</head>
+<style> 
+
+table, td, th {
+  border: 7px solid darkmagenta;
 }
 
-div {
-	padding: 50px;
-	background-color: black;
+table  {
+  border-collaspe: collaspe; 
 }
 
-p {
-    color: yellow;
+td, th {
+  padding: 20px;
+  text-align: center; 
 }
+
+th {
+  font-size: 2.4cm;
+  color: darkblue;
+}
+ .next-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #2563eb;
+      color: white;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      border-radius: 6px;
+      transition: background-color 0.2s ease;
+    }
+
+    .next-button:hover {
+      background-color: #1d4ed8;
+    }
+
+    .next-button:active {
+      background-color: #1e40af;
+    }
+
+
+
 
 </style>
 <body>
-<div>
-<h1>Error 404</h1>
-<p>
-    This assignment has not been uploaded. Upload all the files into this <span id="self"></span> folder and replace the index.html file.
-</p>
-</div>
-<script>
-    var current = window.location.pathname.split("/").filter(Boolean).pop();
-    current = current.charAt(0).toLowerCase() + current.slice(1);
-    document.getElementById("self").innerHTML = current;
-</script>
+ <h1>Common HTML Tags inside (body)</h1>
+
+
+    <table>
+
+
+
+
+    
+      <tr>
+        
+        <th>body tags</th>
+        <th>definition</th>
+        <th>examples</th>
+    
+      </tr>
+
+      <tr>
+      
+      <td>H1-H6</td>
+      <td>creates headings in different sizes from largest to smallest</td>
+      <td>main heading, subheading</td>
+      
+
+    </tr>
+
+    <tr>
+    
+      <td>(p)</td>
+      <td>creates a paragraph</td>
+      <td>hello my name is marko that is a paragraph</td>
+    </tr>
+
+
+    <tr>
+    	<td>(a)</td>
+    	<td>creates a hyperlink that takes users to another webpage</td>
+    	<td>Click <a>here</a> to go to next page</td>
+    </tr>
+
+     <tr>
+    	<td>(em)</td>
+    	<td>makes text have empahsis</td>
+    	<td>you have to <em>hurry!</em></td>
+    </tr>
+
+
+     <tr>
+    	<td>(LI)</td>
+    	<td>creates a numbered list of items</td>
+    	<td>1. first 2. second 3. third</td>
+    </tr>
+
+
+
+     <tr>
+    	<td>(table)</td>
+    	<td>creates a table with rows and headings</td>
+    	<td>A table with sports results</td>
+    </tr>
+
+
+
+
+     <tr>
+    	<td>(B)</td>
+    	<td>makes a text bold to show importance</td>
+    	<td><B>hello</B></td>
+    </tr>
+
+
+    <tr>
+      <td>(Ul)</td>
+      <td>creates a bulleted list of items</td>
+      <td><ul>pizza</ul> <ul>burger</ul></td>
+    </tr>
+
+
+    <tr>
+      <td>(Div) and (span)</td>
+      <td>groups content and styles parts of webpage</td>
+      <td>A section of text or a highlighted word</td>
+    </tr>
+
+
+    <tr>
+      <td>(Br)</td>
+      <td>adds a line break and moves text to the next line</td>
+      <td>Hello <Br>world</Br></td>
+    </tr>
+
+
+
+
+
+
+    </table>
+    <a href="inside.html" class="next-button">Next Page</a>
 </body>
 </html>
