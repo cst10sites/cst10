@@ -1,38 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Error 404</title>
-<link rel="icon" type="image/png" href="favicon.ico">
-<style>
-body {
-    background-color: grey;
-    color: white;
-    margin: 50px;
-    font-family: Verdana;
-}
+<h1>HTML/CSS Guide</h1>
+<h2>Common HTML Tags</h2>
 
-div {
-	padding: 50px;
-	background-color: black;
-}
+<link rel="stylesheet" href="style.css">
 
-p {
-    color: yellow;
-}
+<a href="outside.html" class="button">Outside HTML Tags</a>
 
-</style>
-<body>
-<div>
-<h1>Error 404</h1>
-<p>
-    This assignment has not been uploaded. Upload all the files into this <span id="self"></span> folder and replace the index.html file.
-</p>
-</div>
-<script>
-    var current = window.location.pathname.split("/").filter(Boolean).pop();
-    current = current.charAt(0).toLowerCase() + current.slice(1);
-    document.getElementById("self").innerHTML = current;
-</script>
-</body>
-</html>
+<table>
+    <tr>
+        <th>Tag</th>
+        <th>Definition</th>
+        <th>Examples</th>
+    </tr>
+
+    <tr>
+        <td>&lt;h1&gt; to &lt;h6&gt;</td>
+        <td>Creates headings.</td>
+        <td><h3>This is a heading</h3></td>
+    </tr>
+
+    <tr>
+        <td>&lt;p&gt;</td>
+        <td>Creates a paragraph.</td>
+        <td><p>This is a paragraph.</p></td>
+    </tr>
+
+    <tr>
+        <td>&lt;a href=""&gt;</td>
+        <td>Creates a hyperlink.</td>
+        <td><a href="outside.html">Click here!</a></td>
+    </tr>
+
+    <tr>
+        <td>&lt;img&gt;</td>
+        <td>Displays an image.</td>
+        <td>
+  <img src="https://assets.bonappetit.com/photos/5b919cb83d923e31d08fed17/1:1/w_2560%2Cc_limit/basically-burger-1.jpg" alt="Burger Image" width="100">
+        </td>
+    </tr>
+
+    <tr>
+        <td>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</td>
+        <td>Creates lists.</td>
+        <td>
+            <ul>
+                <li>Orange</li>
+                <li>Kiwi</li>
+            </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <td>&lt;br&gt; and &lt;hr&gt;</td>
+        <td>Creates line breaks and horizontal lines.</td>
+        <td>First line<br>Second line<hr></td>
+    </tr>
+
+    <tr>
+        <td>&lt;b&gt; and &lt;i&gt;</td>
+        <td>Makes text bold or italic.</td>
+        <td><b>Bold</b> and <i>Italic</i></td>
+    </tr>
+
+    <tr>
+        <td>&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</td>
+        <td>Creates a table.</td>
+        <td>
+            <table>
+                <tr><th>Name</th></tr>
+                <tr><td>Alex</td></tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td>&lt;div&gt;</td>
+        <td>Groups sections of content.</td>
+        <td><div>This is a div.</div></td>
+    </tr>
+
+    <tr>
+        <td>&lt;span&gt;</td>
+        <td>Styles a small section of text.</td>
+        <td><span style="color:red;">This text is red.</span></td>
+    </tr>
+
+</table>

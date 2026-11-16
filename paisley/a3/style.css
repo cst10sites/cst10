@@ -1,0 +1,46 @@
+body {
+    background-color: #eeeeee;
+    font-family: Arial;
+    margin: 30px;
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+}
+
+h2 {
+    color: darkblue;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+th {
+    background-color: navy;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    border: 1px solid gray;
+    padding: 12px;
+    text-align: center;
+}
+
+.button {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: blue;
+}
