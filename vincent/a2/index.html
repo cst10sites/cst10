@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Error 404</title>
-<link rel="icon" type="image/png" href="favicon.ico">
-<style>
-body {
-    background-color: grey;
-    color: white;
-    margin: 50px;
-    font-family: Verdana;
-}
-
-div {
-	padding: 50px;
-	background-color: black;
-}
-
-p {
-    color: yellow;
-}
-
-</style>
+	<title>assignment 2</title>
+	<style>
+		body {
+			background: #fff8e8;
+			color: #333333;
+			margin: 35px;
+			font-family: Arial, sans-serif;
+		}
+		h1{
+			color: #b84025;
+		}
+        h2{
+        	color: #d15738;
+        }
+    </style>
+</head>
 <body>
-<div>
-<h1>Error 404</h1>
-<p>
-    This assignment has not been uploaded. Upload all the files into this <span id="self"></span> folder and replace the index.html file.
-</p>
-</div>
-<script>
-    var current = window.location.pathname.split("/").filter(Boolean).pop();
-    current = current.charAt(0).toLowerCase() + current.slice(1);
-    document.getElementById("self").innerHTML = current;
-</script>
+	<h1>My Recipe: Homemade Egg Noodles</h1>
+
+	<img src="Noodles.jpg" style="width:32%; float:right; margin-left:20px;" alt="Bowl of egg Noodles">
+	<img src="yum.png" style="width:22%; float:left; margin-right:15px;" alt="Yum logo transparent">
+
+	<h2>Introduction</h2>
+	<ul>
+		<li>2 &frac12; cups all-purpose flour</li>
+		<li>4large eggs</li>
+		<li>&frac12; teaspoon salt</li>
+	</ul>
+
+	<h2>Instructions</h2>
+	<ol>
+		<li>Mix flour and salt together in a large bowl.</li>
+		<li>beat eggs and pour them into the flour mixture to form dough.</li>
+		<li>Knead the dough for 8 minutes until smooth, then let it rest for 30 minutes.</li>
+		<li>Roll out the dough thinly and cut it into long noodle strips.</li>
+		<li>Boil the noodles in hot water at 100&deg;C until they float tothetop.</li>
+	</ol>
 </body>
 </html>
