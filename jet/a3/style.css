@@ -1,7 +1,13 @@
+body {
+  background-color: lightgray; 
+}
 
 h1 {
   color: navy;
+  background-color: lightyellow; 
 }
-table td th {
+
+table, td, th {
   border: 2px solid magenta;
+  background-color: #f0f8ff; 
 }
